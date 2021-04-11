@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat Room</title>
+</head>
+<body>
+    <div class="container my-4">
+        <div class="conv-list">
+            <h1 class=" app_title my-4 text-center">Chat Rooms</h1>
+            <div class="chat-rooms mb-3 text-center">
+                <div class="room_title my-4"><h5>@Rooms</h5></div>
+                <button class="btn active" id="general">General</button>
+                <button class="btn" id="gaming">Gaming</button>
+                <button class="btn" id="music">Music</button>
+                <button class="btn" id="Programming">Programming</button>
+            </div>
+        </div>
+        <hr class="rounded"> 
+        <div class="chat-window" my-4>
+            <div class="page">
+                <ul class="chat-list list-group"></ul>
+            </div>
+        </div>
+        <div class="forms">
+            <form  class="class new-chat my-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Your message:</div>
+                    </div>
+                    <input type="text" id="message" class="form-control" required>
+                    <div class="input-group-append">
+                        <input type="submit" class=" btn" value="send">
+                    </div>
+                </div>
+            </form>
+            <form class="new-name my-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Update name:</div>
+                    </div>
+                    <input type="text" id="name" class="form-control" required>
+                    <div class="input-group-append">
+                        <input type="submit" class="btn" value="update">
+                    </div>
+                 </div>
+                 <div class="update-mssg"></div>
+             </form>
+        </div>
+   </div> 
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+<script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+<script src="/chatRooms/scripts/back.js"></script>
+<script src="/chatRooms/scripts/app.js"></script>
+<script src="/chatRooms/scripts/front.js"></script>
+</body>
+</html>

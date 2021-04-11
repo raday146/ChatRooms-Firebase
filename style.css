@@ -1,0 +1,50 @@
+body{
+    background: #e3e3e9e0;
+}
+h1, h5{
+    text-align: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: grid;
+    max-width: 600px;
+    max-height: 1000px;
+}
+
+.conv-list{
+    background: rgba(196, 189, 189, 0.4);
+    border-radius: 10px;
+}
+
+hr.rounded {
+    border-top: 2px solid rgb(90, 90, 90);
+    border-radius: 4px;
+  }
+.btn{
+    background:#101b7c9d;
+    color: white;
+    outline: none;
+    box-shadow: none !important;
+}
+.btn.active{
+    background:#e3e3e9e0;
+    color: black;
+    border-color: black;
+}
+.btn:focus{
+    outline: none !important;
+    
+}
+.username{
+    font-weight: bold;
+}
+.time{
+    font-size: 0.7em;
+    color: rgb(51, 50, 50);
+    
+}
+.field {
+    background: #b3b3b3cb;
+    border-radius: 10px;
+}
